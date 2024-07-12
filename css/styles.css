@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#task-list li.completed .task-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
