@@ -1,23 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management Tool</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Task Management Tool</h1>
-        <div class="input-group mb-3">
-            <input type="text" id="new-task" class="form-control" placeholder="Add a new task">
-            <button class="btn btn-success" id="add-task"><i class="fas fa-plus"></i></button>
-        </div>
-        <ul id="task-list" class="list-group"></ul>
-    </div>
-    <script src="script/script.js"></script>
-</body>
-</html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> TodoApp</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="container text-center">
+                    <h1 class="display-6 ">Task Management App</h1>
+                </div>
+            </header>
+
+            <section>
+                <div class="container">
+                    <h2 class="text-center mt-5 mb-4">Tasks </h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-2 mb-4">
+                            <div class="card">
+                                <!-- <img src="img/movie2.jpg" class="card-img-top"
+                                alt="Remember The Goal"> -->
+                                <div class="card-body">
+
+                                    <h5 class="card-title">Add Task</h5>
+                                    <input type="text" id="new-task"
+                                        class="form-control"
+                                        placeholder="Add a new task"> <br>
+                                    <button class="btn btn-success"
+                                        id="add-task"><i
+                                            class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-2 mb-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pending
+                                            Tasks</h5>
+                                        <ul id="task-list"
+                                            class="list-group"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-2 mb-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Finished Tasks
+                                            Tasks</h5>
+                                            <ul id="completed-task-list"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </main>
+                 
+                    <script src="script/script.js"></script>
+                </body>
+            </html>

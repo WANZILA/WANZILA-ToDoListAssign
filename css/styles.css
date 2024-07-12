@@ -1,28 +1,17 @@
-/* styles.css */
+
 body {
+    background: linear-gradient(to bottom, #333333, #1a1a1a);
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    height: 100vh;
+    color: #cccccc;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
+
+.card {
+ 
+    --bs-card-bg: none;
+    color:  #cccccc;
+    word-wrap: break-word;
+    background-color: #1a1a1a;
+
 }
 
-#task-list li.completed .task-text {
-    text-decoration: line-through;
-    color: #aaa;
-}
-
-.task-actions {
-    display: flex;
-    gap: 10px;
-}
-
-.task-actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-}
